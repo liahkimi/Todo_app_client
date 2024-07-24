@@ -1,0 +1,50 @@
+정규 표현식
+- 정규표현식(regular expression)은 일종의 문자를 표현하는 공식으로, 특정 규칙이 있는 문자열
+집합을 추출할 때 자주 사용하는 기법이다.
+
+- 수량자 (Quantifiers)
+    - ? : 없거나 있거나 (zero or one)
+    - * : 있거나 많거나 (zero or more)
+    - +: 하나 또는 많이 (one or more)
+    - {n} : n개가 있는
+    - {min} : 최소
+    - {min, max} : 최소 그리고 최대
+
+- 범위(Group and Range)
+    - (): 그룹
+    - []: 문자셋, 괄호안에 어떤 문자
+    - [^]: 부정 문자셋
+    - (?:): 찾지만 기억하지는 않음
+    - (?=): 앞쪽과 일치
+    - (?<=): 뒤쪽과 일치
+
+react-hook-form
+> npm i react-hook-form
+> yarn add react-hook-form
+
+- register : input 요소를 React-hook-form과 연결해 검증 규칙을 적용할 수 있게 해주는 메서드
+- handleSubmit : form을 submit 했을 때 실행할 함수
+- formState : form State에 관한 정보를 담고 있는 객체
+- error : input 값들의 에러 정보를 가지고 있는 객체
+- getValues  : input 값을 가져 올 수 있는 함수
+
+mode 설정
+- onChange : input 값이 바뀔 때마다 검증 로직이 동작하도록 하는 모드
+- onBlur : 포커스 상태를 잃어 버릴 때 동작
+- onSubmit : 제출 함수가 실행 될 때 동작
+- onTouched : 첫 번쨰 blur 이벤트에서 동작
+- all : blur, onChange 이벤트에서 동작
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,92 @@
+{
+  "todo": [
+    {
+      "id": "1",
+      "title": "day13 강의 복습하기",
+      "isChecked": false
+    },
+    {
+      "id": "2",
+      "title": "day14 강의 복습하기",
+      "isChecked": false
+    },
+    {
+      "id": "3",
+      "title": "day15 강의 복습하기",
+      "isChecked": false
+    },
+    {
+      "id": "4",
+      "title": "wishList page 작업하기",
+      "isChecked": false
+    },
+    {
+      "id": "5",
+      "title": "reservationList page 작업하기",
+      "isChecked": false
+    },
+    {
+      "id": "6",
+      "title": "todo app 기능 추가하기",
+      "isChecked": false
+    },
+    {
+      "id": "7",
+      "title": "팀프로젝트 컨벤션 정하기",
+      "isChecked": false
+    },
+    {
+      "id": "8",
+      "title": "오 된다!!!!11",
+      "isChecked": false
+    }
+  ],
+  "memo": [
+    {
+      "id": "1",
+      "title": "오늘 할일을 적는 첫 메모",
+      "description": "집에가서 잠자기"
+    },
+    {
+      "id": "2",
+      "title": "오늘 할일 적어보기",
+      "description": "집에가서 밥먹기"
+    },
+    {
+      "id": "3",
+      "title": "오늘 할일 적어보기",
+      "description": "리액트 복습하기"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "김세환",
+      "age": 20,
+      "address": "경기도"
+    },
+    {
+      "id": "2",
+      "name": "홍길동",
+      "age": 33,
+      "address": "강원도"
+    },
+    {
+      "id": "3",
+      "name": "김철수",
+      "age": 17,
+      "address": "서울시"
+    },
+    {
+      "id": "4",
+      "name": "김영희",
+      "age": 25,
+      "address": "인천광역시"
+    },
+    {
+      "id": "d8f5",
+      "email": "test123@test123.com",
+      "password": "test123!2#"
+    }
+  ]
+}

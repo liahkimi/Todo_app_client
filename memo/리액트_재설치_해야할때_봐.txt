@@ -1,0 +1,106 @@
+To. Me
+
+만약, 깃으로 폴더를 날리거나 노크북이 맛이가 또 날렸다면 부디 이 메모를 보길...
+일단 다른 분이 주신 자료라도 있는데, package.json이랑 node_module과 같은 설치해야 있는 파일들은 죄다 없다면 react를 새로 깔아야 해.
+
+
+1. vscode 그냥 열기
+
+2. vscode의 터미널 파워쉘로 열기
+ 
+3. 크롬에서 Node.js  다운로드하고 (npm js 패키지매니저 자동 설치됨)
+
+4. yarn 설치 (js패키지 매니저)
+> get-ExecutionPolicy // Restricted 인 경우는 아래 명령어 입력
+
+> set-ExecutionPolicy RemoteSigned 
+
+> npm install -g yarn  //yarn 설치
+
+> yarn -v //버전확인
+
+5. 새로 폴더 만들어서 자료 넣기
+
+6. vscode에 폴더 열기
+
+7. vscode의 터미널에서 cd client 클라이언트 폴더 있으면 거기로 이동
+
+8. react 설치 
+(CRA=React 프로젝트를 하기위해 필요한 여러프로그램을 자동으로 설치해주는 도구)
+> yarn create react-app .  (- 하이픈 잘 봐라.) // 이 폴더 자리에 리액트앱 생성 ( . )
+
+9. 이제 터미널 새 창 추가로 키고 cd server 서버 폴더로 이동
+
+10. json server 설치
+yarn global add json-server    
+
+11. 서버 연결 테스트
+npx json-server ./db.json --port 4000   
+
+12. 클라이언트도 열리는지 테스트
+cd client
+yarn start
+
+--------------------------------------------------------------------------------------------
++ 패키지 필요한거 추가
+
+1. async 
+> yarn add react-async 
+
+2. router
+> yarn add react-router-dom
+
+3. globals style
+> yarn add styled-components styled-reset @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome @fortawesome/fontawesome-svg-core
+
+4. hook
+yarn add react-hook-form
+
+----------------------------------------------------------------------------------------------
++ 그 외 명령어들
+
+1. Yarn의 캐시를 강제로 비우기
+> yarn cache clean --force
+// Yarn은 패키지를 설치할 때 이전에 다운로드한 패키지를 캐시에 저장하여 재사용하는데, 때로는 이러한 캐시가 문제를 일으킬 수 있습니다. 이 명령어는 그러한 문제를 해결하기 위해 캐시를 완전히 비워줍니다.
+
+2. 프로젝트의 종속성을 다시 설치
+> yarn install --force 
+// --force 플래그가 함께 사용되면 이미 설치된 종속성(react)에 관계없이 강제로 다시 설치하게 됩니다. 종속성 설치를 재시도하면서 잠재적으로 발생하는 문제를 해결하는 데 유용합니다.
+// yarn install --force 명령어를 사용할 때는 종속성 목록을 지정하지 않고 실행하므로 프로젝트의 모든 종속성을 재설치합니다. 따라서 이미 설치된 패키지들에 관계 없이 모든 종속성이 다시 설치됩니다.
+
+
+
+----- react 설치시 문제 생기면 여길 봐----------
+
+1. get-ExecutionPolicy 
+// Restricted 인 경우
+
+2. set-ExecutionPolicy RemoteSigned 
+// 이거 안되면
+// 윈도우 파워쉘 관리자권한으로 켜서  
+> set-ExecutionPolicy RemoteSigned 입력 후 Y 입력후 끄기
+// 그대로 RemoteSigned 상태가 안되면
+// vscode 터미널에서 
+> Set-ExecutionPolicy RemoteSigned -Scope CurrentUser 
+// RemoteSigned 뜸.
+
+3.  npm install -g yarn  //yarn 설치
+// npm 버전이 낮아서 안되면,
+> npm update
+//npm 없으면 node.js가 설치 안된 것 => node.js 다운로드> path경로상위로 (시스템환경변수편집)>node -v확인
+
+4.  yarn -v //yarn 버전 확인
+
+5.  yarn global add create-react-app  //react 설치
+=> 2024년 부터 npm create vite@latest my-react-app -- --template react 로 사용 (vite 방식)
+
+6. yarn create react-app [프로젝트 이름]  //프로젝트 이름이 적힌 파일 생성
+	=> yarn create vite 프로젝트이름 —template react (vite방식)
+	=>  React >  JavaScript
+
+<yarn이 사용이 안될 경우(mac)  npm ver >
+1> npm install -g create-react-app
+2> create-react-app [프로젝트 이름]
+
+
+
